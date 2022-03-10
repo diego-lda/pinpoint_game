@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PinPoint</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script async src="./javascript/index.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVW0Tp9CiLYMBX3aE1Wf1Aj38p-or8rRQ&callback=initMap">
+    </script>
+  </head>
+  <body>
+    <h1 style="color:#66D3F5;">PinpointPostCode</h1>
+    <font size="2" id='date'></font>
+
+    <div class="image-section">
+    <div id="map"></div>
+    </div>
+
+    <div class="newone">
+      <a href="#" onclick="document.getElementById('postcode').innerHTML = getRndInteger(1,17667)"><span>New Postcode</span></a>
+    </div>
+
+    <div class="current">
+      <h2 style="color:#ff003b;" id="postcode"></h2>
+    </div>
+
+    <div class="attempt">
+      <h3>Your Guess:</h3>
+      <h4 id="guessLat">Latitude</h4>
+      <h4 id="guessLong">Longitude</h4>
+    </div>
+
+    <div class="submit">
+      <b href="#" 
+      onclick="document.getElementById('feedback').innerHTML = 
+              checkit(window.truelat,window.truelng,
+                      document.getElementById('guessLat').innerHTML,
+                      document.getElementById('guessLong').innerHTML)">
+      <span>Guess!</span></b>
+    </div>
+
+    <div class="return">
+      <h3>You missed by (in km):</h3>
+      <h4 id="feedback"></h4>
+      <font size="3" >That postcode is in:</font>
+    </div>
+
+    <div class="return2">
+      (<font size="3" id="sollat"></font>,
+      <font size="3" id="sollng"></font>)
+    </div>
+
+
+    <div class="round">
+      <h4>Current Round:</h4>
+      <h4 id="roundcount"></h4>
+    </div>
+
+  
+    <div class="score">
+      <h4>Total Distance:</h4>
+      <h4 id="sumdist"></h4>
+    </div>
+    
+    
+  </body>
+</html>

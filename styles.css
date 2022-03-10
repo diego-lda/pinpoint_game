@@ -1,0 +1,172 @@
+body {
+  text-align: center;
+  background-color: #000000;
+  font-family: 'ABeeZee';font-size: 22px;
+  font-weight: bold;
+  color: #848484;
+}
+
+div {
+  margin-top: 15px;
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+}
+
+
+.map-container{
+  margin-right: 25px;
+  margin-left: 25px;
+  background-color: white;
+}
+
+
+.newone{
+  position: fixed;
+  top: 10%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+
+a{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: 'ABeeZee';
+  text-decoration: none;
+  color: #848484;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+a span{
+  position: relative;
+  z-index: 2;
+}
+
+a:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff003b;
+  transition: all .35s;
+}
+
+a:hover{
+  color: #fff;
+}
+
+a:hover:after{
+  width: 100%;
+}
+
+.current{
+  position: fixed;
+  top: 20%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.attempt{
+  position: fixed;
+  top: 40%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.submit{
+  position: fixed;
+  top: 60%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+
+b{
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: 'ABeeZee';
+  text-decoration: none;
+  color: #848484;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+b span{
+  position: relative;
+  z-index: 2;
+}
+
+b:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #3bff00;
+  transition: all .35s;
+}
+
+b:hover{
+  color: #fff;
+}
+
+b:hover:after{
+  width: 100%;
+}
+
+.return{
+  position: fixed;
+  top: 75%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.return2{
+  position: fixed;
+  top: 90%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+
+
+#map {
+  top: 20%;
+  left: 15%;
+  width: 1000px;
+  height: 600px;
+}
+
+
+
+.round{
+  position: fixed;
+  top: 10%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+.score{
+  position: fixed;
+  top: 10%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
+
